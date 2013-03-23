@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- $Id: -->
+<TelescopeDesign>
+  <comment>SKA1 dish telescope</comment>
+  <DefaultTopLevel>Baseline_Mid</DefaultTopLevel>
+  <name>SKA1_Dish</name>
+  <author>Tim Cornwell</author>
+  <DesignBlockMapping>
+    <block>
+      <ImplementationDB>Baseline_Mid</ImplementationDB>
+      <InternalName>Baseline_Mid</InternalName>
+    </block>
+    <block>
+      <ImplementationDB>Baseline_Computing_Storage</ImplementationDB>
+      <InternalName>Computing_Storage</InternalName>
+    </block>
+   <block>
+      <ImplementationDB>Baseline_Computing_Memory</ImplementationDB>
+      <InternalName>Computing_Memory</InternalName>
+    </block>
+    <block>
+      <ImplementationDB>Baseline_Computing_Pipeline</ImplementationDB>
+      <InternalName>Computing_Pipeline</InternalName>
+    </block>
+    <block>
+      <ImplementationDB>Baseline_Computing_Vis_Engine</ImplementationDB>
+      <InternalName>Computing_Vis_Engine</InternalName>
+    </block>
+    <block>
+      <ImplementationDB>Baseline_Computing_Deconvolve_Engine</ImplementationDB>
+      <InternalName>Computing_Deconvolve_Engine</InternalName>
+    </block>
+    <block>
+      <ImplementationDB>Baseline_Computing_Processor</ImplementationDB>
+      <InternalName>Computing_Processor</InternalName>
+    </block>
+  </DesignBlockMapping>
+  <DetailedDescription>Enter comment here</DetailedDescription>
+  <GlobalInputs/>
+</TelescopeDesign>

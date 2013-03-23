@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- $Id: -->
+<ScalingRelation>
+  <comment>Estimated memory costs scaling law</comment>
+  <name>Computing_Memory_Scaling</name>
+  <reference>Personal communication from B. Humphreys</reference>
+  <author>Tim Cornwell</author>
+  <DetailedDescription></DetailedDescription>
+  <data>
+    <datapoint>
+      <y>14.0</y>
+      <x>2013</x>
+    </datapoint>
+    <datapoint>
+      <y>1.0</y>
+      <x>2018</x>
+    </datapoint>
+  </data>
+</ScalingRelation>

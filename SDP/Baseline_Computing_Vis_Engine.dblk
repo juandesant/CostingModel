@@ -1,0 +1,725 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- $Id: -->
+<DesignBlock>
+  <comment>Computing</comment>
+  <inputs>
+    <input>
+      <comment>Number of continuum major cycles</comment>
+      <name>Number_Continuum_Major_Cycles</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <StdDev></StdDev>
+        <min>5.0</min>
+        <max>20.0</max>
+        <PeakLikelihood>10.0</PeakLikelihood>
+        <str></str>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>integer</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Number of spectral line major cycles</comment>
+      <name>Number_Spectral_Major_Cycles</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <StdDev></StdDev>
+        <min>5.0</min>
+        <max>20.0</max>
+        <PeakLikelihood>10.0</PeakLikelihood>
+        <str></str>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>integer</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Number of Taylor terms in frequency expansion</comment>
+      <name>Number_Taylor_Terms</name>
+      <LowerLimit>1</LowerLimit>
+      <DefaultValue>
+        <StdDev></StdDev>
+        <min></min>
+        <max></max>
+        <PeakLikelihood>1.0</PeakLikelihood>
+        <str></str>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>integer</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Pipeline type e.g. Calibration, Continuum, Spectral_Line, Transient, All</comment>
+      <name>Pipeline_Type</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <StdDev></StdDev>
+        <min></min>
+        <max></max>
+        <PeakLikelihood></PeakLikelihood>
+        <str>Continuum</str>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>String</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues>
+        <value>
+          <value>Calibration</value>
+        </value>
+        <value>
+          <value>Continuum</value>
+        </value>
+        <value>
+          <value>Spectral_Line</value>
+        </value>
+        <value>
+          <value>Transient</value>
+        </value>
+        <value>
+          <value>All</value>
+        </value>
+        <value>
+          <value>Ingest</value>
+        </value>
+      </PermittedValues>
+      <type>string</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Mueller matrix application: Full, Diagonal</comment>
+      <name>Mueller_Multiply</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <StdDev></StdDev>
+        <min></min>
+        <max></max>
+        <PeakLikelihood></PeakLikelihood>
+        <str>Diagonal</str>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>String</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues>
+        <value>
+          <value>Full</value>
+        </value>
+        <value>
+          <value>Diagonal</value>
+        </value>
+     </PermittedValues>
+      <type>string</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>RMS fractional W</comment>
+      <name>RMS_W</name>
+      <LowerLimit>0.0</LowerLimit>
+      <DefaultValue>
+        <str></str>
+        <StdDev></StdDev>
+        <max></max>
+        <min></min>
+        <PeakLikelihood>0.3</PeakLikelihood>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>float</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Bandwidth for observation</comment>
+      <name>Bandwidth</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <str></str>
+        <StdDev></StdDev>
+        <max></max>
+        <min></min>
+        <PeakLikelihood>300000000.0</PeakLikelihood>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit>Hz</unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>float</type>
+      <unit>Hz</unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Number of images</comment>
+      <name>Number_Images</name>
+      <LowerLimit>1</LowerLimit>
+      <DefaultValue>
+        <str></str>
+        <StdDev></StdDev>
+        <max></max>
+        <min></min>
+        <PeakLikelihood>1</PeakLikelihood>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>integer</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Number of beams per station/antenna</comment>
+      <name>Number_Beams</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <str></str>
+        <StdDev></StdDev>
+        <max></max>
+        <min></min>
+        <PeakLikelihood>1.0</PeakLikelihood>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>integer</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Number of antennas</comment>
+      <name>Number_Antennas</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <str></str>
+        <StdDev></StdDev>
+        <max></max>
+        <min></min>
+        <PeakLikelihood>96.0</PeakLikelihood>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>integer</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Maximum baseline length</comment>
+      <name>Maximum_Baseline</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <str></str>
+        <StdDev></StdDev>
+        <max></max>
+        <min></min>
+        <PeakLikelihood>50000.0</PeakLikelihood>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit>m</unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>float</type>
+      <unit>m</unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Fresnel number</comment>
+      <name>Fresnel_Number</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <str></str>
+        <StdDev></StdDev>
+        <max></max>
+        <min></min>
+        <PeakLikelihood>1.0</PeakLikelihood>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit>m</unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>float</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Frequency for imaging</comment>
+      <name>Frequency</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <str></str>
+        <StdDev></StdDev>
+        <max></max>
+        <min></min>
+        <PeakLikelihood>1400000000.0</PeakLikelihood>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit>Hz</unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>float</type>
+      <unit>Hz</unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Effective diameter of station or antenna</comment>
+      <name>Effective_Diameter</name>
+      <LowerLimit>0.1</LowerLimit>
+      <DefaultValue>
+        <str></str>
+        <StdDev></StdDev>
+        <max></max>
+        <min></min>
+        <PeakLikelihood>20.0</PeakLikelihood>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit>m</unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>float</type>
+      <unit>m</unit>
+      <UpperLimit>1000</UpperLimit>
+    </input>
+     <input>
+      <comment>Number of channels for continuum imaging</comment>
+      <name>Number_Continuum_Channels</name>
+      <LowerLimit>1</LowerLimit>
+      <DefaultValue>
+        <str></str>
+        <min></min>
+        <max></max>
+        <StdDevPercent></StdDevPercent>
+        <PeakLikelihood>1</PeakLikelihood>
+        <StdDev></StdDev>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>integer</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+     <input>
+      <comment>Number of channels for spectral imaging</comment>
+      <name>Number_Spectral_Channels</name>
+      <LowerLimit>1</LowerLimit>
+      <DefaultValue>
+        <str></str>
+        <min></min>
+        <max></max>
+        <StdDevPercent></StdDevPercent>
+        <PeakLikelihood>32768</PeakLikelihood>
+        <StdDev></StdDev>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>integer</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Guard band for the field of view</comment>
+      <name>Guard_Band</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <StdDev></StdDev>
+        <min></min>
+        <max></max>
+        <PeakLikelihood>4.0</PeakLikelihood>
+        <str></str>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>float</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Processing must complete in this fraction of real time</comment>
+      <name>Duty_Cycle</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <StdDevPercent></StdDevPercent>
+        <min></min>
+        <max></max>
+        <PeakLikelihood>1.0</PeakLikelihood>
+        <str></str>
+        <StdDev></StdDev>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>float</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Observing time </comment>
+      <name>Observing_Time</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <StdDev></StdDev>
+        <min></min>
+        <max></max>
+        <PeakLikelihood>43200.0</PeakLikelihood>
+        <str></str>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit>s</unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>float</type>
+      <unit>s</unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Time interval for recalculating A</comment>
+      <name>A_Time</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <StdDev></StdDev>
+        <min></min>
+        <max></max>
+        <PeakLikelihood>0.0</PeakLikelihood>
+        <str></str>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit>s</unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>float</type>
+      <unit>s</unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Are the As antenna dependent</comment>
+      <name>Antenna_A</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <DistributionType>FixedValue</DistributionType>
+        <min></min>
+        <max></max>
+        <StdDevPercent></StdDevPercent>
+        <PeakLikelihood>0.0</PeakLikelihood>
+        <str></str>
+        <StdDev></StdDev>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>integer</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+     <input>
+      <comment>Optimum transition between w projection and snapshots</comment>
+      <name>Optimum_rho</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <StdDev></StdDev>
+        <min></min>
+        <max></max>
+        <PeakLikelihood>0.0</PeakLikelihood>
+        <str></str>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>float</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Number of continuum visibility samples per second</comment>
+      <name>Continuum_Sample_Rate</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <StdDev></StdDev>
+        <min></min>
+        <max></max>
+        <PeakLikelihood>1000000000.0</PeakLikelihood>
+        <str></str>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit>s^-1</unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>float</type>
+      <unit>s^-1</unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Number of spectral visibility samples per second</comment>
+      <name>Spectral_Sample_Rate</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <StdDev></StdDev>
+        <min></min>
+        <max></max>
+        <PeakLikelihood>1000000000.0</PeakLikelihood>
+        <str></str>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit>s^-1</unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>float</type>
+      <unit>s^-1</unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Number of pixels on each l,m axis</comment>
+      <name>Number_Pixels</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <DistributionType>FixedValue</DistributionType>
+        <min></min>
+        <max></max>
+        <StdDevPercent></StdDevPercent>
+        <PeakLikelihood>4096.0</PeakLikelihood>
+        <str></str>
+        <StdDev></StdDev>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>integer</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+  </inputs>
+  <name>Baseline_Computing_Vis_Engine</name>
+  <reference>computing.xhtml</reference>
+  <author>Tim Cornwell</author>
+  <specifications/>
+  <outputs/>
+  <implementation>
+from math import pow
+from math import pi
+from math import sqrt
+from math import log
+import numpy
+import cmath
+
+blockname='Vis_Engine'
+
+######################################################################################################
+#
+# Get relevant parameters from processor
+#
+Gridding_Time=ListOfChildren['processor']['specifications']['Gridding_Time']
+FFT_Time=ListOfChildren['processor']['specifications']['FFT_Time']
+Image_Reprojection_Time=ListOfChildren['processor']['specifications']['Image_Reprojection_Time']
+
+Fresnel_Number=message['Fresnel_Number']
+Number_Pixels=message['Number_Pixels']
+
+if message["Mueller_Multiply"]=='Full':
+	Mueller_Multiply=4
+else:
+	Mueller_Multiply=1
+
+print "%s Assuming %s Mueller matrix multiply" % (blockname, message['Mueller_Multiply'])	
+
+#
+# Calculate processing costs
+#
+# Find time to FFT the images
+#
+# Ignore error on log
+NLN=Number_Pixels*Number_Pixels*log(Number_Pixels.__float__(), 2)
+if message["Pipeline_Type"]=="Continuum":
+	Image_FFT_Fraction=(1+message['Number_Continuum_Major_Cycles']) * message['Number_Taylor_Terms']*NLN*FFT_Time/ message['Observing_Time'] / message['Duty_Cycle']
+elif message["Pipeline_Type"]=="Transient":
+	Image_FFT_Fraction=(1+message['Number_Images']) * message['Number_Taylor_Terms']*NLN*FFT_Time/ message['Observing_Time'] / message['Duty_Cycle']
+elif message["Pipeline_Type"]=="Spectral_Line":
+	Image_FFT_Fraction=(1+message['Number_Spectral_Major_Cycles']) * message['Number_Spectral_Channels']*NLN*FFT_Time/ message['Observing_Time'] / message['Duty_Cycle']
+else:
+	Image_FFT_Fraction=message['Number_Taylor_Terms']*NLN*FFT_Time/ message['Observing_Time'] / message['Duty_Cycle']
+#
+# Now move on to the gridding costs
+#
+# Find time to initialise the convolution kernel. Here we assume that each channel is calculated separately. This is only done
+# once for all major cycles
+#
+Number_A_Recalculations=1
+if message["A_Time"]>0.0:
+	if message['Antenna_A']>0.0:
+		Number_A_Recalculations = message['Number_Beams'] * message['Number_Antennas'] * message["Observing_Time"]/message["A_Time"]
+		print blockname,"\tRecalculating beam and antenna-dependent AW kernel every %s for a total of %s calculations" % (message['A_Time'], Number_A_Recalculations)
+	else:
+		Number_A_Recalculations = message["Observing_Time"]/message["A_Time"]
+		print blockname,"\tRecalculating antenna-independent AW kernel every %s for a total of %s calculations" % (message['A_Time'], Number_A_Recalculations)
+	
+	
+if message["Pipeline_Type"]=="Spectral_Line":
+	Kernel_Init_Fraction=2 * Number_A_Recalculations * message['Number_Spectral_Channels']*NLN*FFT_Time/ message['Observing_Time'] / message['Duty_Cycle']
+else:
+	Kernel_Init_Fraction=2 * Number_A_Recalculations * message['Number_Continuum_Channels']*NLN*FFT_Time/ message['Observing_Time'] / message['Duty_Cycle']
+#
+# Now we can calculate the various gridding rates and the reprojection rate. These are in
+# units of the total observation time and so can be converted into number of computing units
+# directly. Note that the sampling rate already includes the correct number of channels and polarizations for
+# each mode 
+#
+# Cost of A projection alone
+#
+R_A = message['Guard_Band']
+
+if message['Pipeline_Type']=='Continuum':
+	AProject_Fraction=((1+message['Number_Continuum_Major_Cycles']) * message['Number_Taylor_Terms'] * message['Continuum_Sample_Rate'] * Mueller_Multiply * Gridding_Time / message['Duty_Cycle']) * R_A*R_A
+elif message['Pipeline_Type']=='Spectral_Line':
+	AProject_Fraction=((1+message['Number_Spectral_Major_Cycles']) * message['Spectral_Sample_Rate'] * Mueller_Multiply * Gridding_Time / message['Duty_Cycle']) * R_A*R_A
+else:
+	AProject_Fraction=(message['Number_Taylor_Terms'] * message['Continuum_Sample_Rate'] * Mueller_Multiply * Gridding_Time / message['Duty_Cycle']) * R_A*R_A
+#
+# Cost of W projection alone
+#
+RMS_W=message['RMS_W']
+
+if message['Pipeline_Type']=='Continuum':
+	WProject_Fraction=((1+message['Number_Continuum_Major_Cycles']) * message['Number_Taylor_Terms'] * Mueller_Multiply * message['Continuum_Sample_Rate'] \
+	* Gridding_Time / message['Duty_Cycle']) * RMS_W*Fresnel_Number * RMS_W*Fresnel_Number
+if message['Pipeline_Type']=='Spectral_Line':
+	WProject_Fraction=((1+message['Number_Spectral_Major_Cycles']) * message['Spectral_Sample_Rate'] * Mueller_Multiply \
+	* Gridding_Time / message['Duty_Cycle']) * RMS_W*Fresnel_Number * RMS_W*Fresnel_Number
+else:
+	WProject_Fraction=(message['Number_Taylor_Terms'] * message['Continuum_Sample_Rate'] * Mueller_Multiply \
+	* Gridding_Time / message['Duty_Cycle']) * RMS_W*Fresnel_Number * RMS_W*Fresnel_Number
+
+#
+# Cost of single reprojection
+#
+h_obs=(pi*message['Observing_Time']/43200.0)
+h_obs.SetUnit('')
+if message['Pipeline_Type']=='Continuum':
+	Reproject_Fraction=(1+message['Number_Continuum_Major_Cycles']) * h_obs*message['Number_Taylor_Terms']*Number_Pixels*Number_Pixels*Image_Reprojection_Time/(message['Observing_Time']*message['Duty_Cycle'])
+elif message['Pipeline_Type']=='Spectral_Line':
+	Reproject_Fraction=(1+message['Number_Spectral_Major_Cycles']) * h_obs*message['Number_Spectral_Channels']*Number_Pixels*Number_Pixels*Image_Reprojection_Time/(message['Observing_Time']*message['Duty_Cycle'])
+else:
+	Reproject_Fraction=h_obs*message['Number_Taylor_Terms']*Number_Pixels*Number_Pixels*Image_Reprojection_Time/(message['Observing_Time']*message['Duty_Cycle'])
+#
+print blockname, "Finding optimum processing mixture"
+
+# Use specified Optimum_rho (fractional) or calculate it?
+#
+if message['Optimum_rho']==0.0:
+	Optimum_rho=pow(Reproject_Fraction/(2.0*WProject_Fraction), 1.0/3.0)
+ 	print blockname,"\tApproximate Optimum_Rho = ", Optimum_rho
+	coeff=[2.0*WProject_Fraction, Kernel_Init_Fraction, AProject_Fraction, -Reproject_Fraction]
+	roots=numpy.roots(coeff)
+ 	for root in roots:
+ 		if root &lt; 1.0 and root &gt; 0.0:
+			Optimum_rho=parameter.toParameter(float(root.real))
+ 			print blockname,"\tAccurate Optimum_Rho    = ", parameter.toParameter(float(root.real))  
+else:
+	Optimum_rho=message['Optimum_rho']
+                      
+if Optimum_rho&gt;1.0:
+    Optimum_rho=1.0
+    print blockname,"\tClipping optimum rho to 1.0"
+#
+# Rho cannot be totally zero because of the radius of the earth
+#
+Minimum_rho=message["Maximum_Baseline"]/(12715000.43)
+Minimum_rho.SetUnit('')
+print blockname,"\tEarth curvature baseline droop = %s, Minimum rho = %s" % (message["Maximum_Baseline"]*Minimum_rho, Minimum_rho)
+if Optimum_rho&lt;Minimum_rho:
+    Optimum_rho=Minimum_rho
+    print blockname,"\tClipping optimum rho to minimum"
+#
+# Calculate final W snapshots cost
+#
+WSnapshots_Fraction = WProject_Fraction * Optimum_rho * Optimum_rho + Kernel_Init_Fraction * Optimum_rho + Reproject_Fraction/Optimum_rho + AProject_Fraction 
+
+Processing_Fraction = WSnapshots_Fraction + Image_FFT_Fraction
+Processing_Fraction.SetUnit('')
+SendMessage('processor', message['quantity']*Processing_Fraction, message['purchase_year'])
+
+print blockname,"\tVis_Engine processing costs (in multiples of processor specified)"
+print blockname,"\t\t Image FFT  \t= ", message['quantity']*Image_FFT_Fraction
+print blockname,"\t\t Evaluating optimum w snapshots settings"
+print blockname,"\t\t\t WProject   \t= ", message['quantity']*WProject_Fraction, "\t\t optimised to ", message['quantity']*WProject_Fraction * Optimum_rho* Optimum_rho
+print blockname,"\t\t\t Kernel     \t= ", message['quantity']*Kernel_Init_Fraction, "\t optimised to ", message['quantity']*Kernel_Init_Fraction * Optimum_rho
+print blockname,"\t\t\t Reproject  \t= ", message['quantity']*Reproject_Fraction, "\t optimised to ", message['quantity']*Reproject_Fraction / Optimum_rho
+print blockname,"\t\t\t AProject   \t= ", message['quantity']*AProject_Fraction
+print blockname,"\t\t\t Optimum rho\t= ", Optimum_rho
+print blockname,"\t\t WSnapshots \t\t= ", message['quantity']*WSnapshots_Fraction
+print blockname,"Vis_Engine processing required = ", message['quantity']*Processing_Fraction
+
+######################################################################################################
+#
+# Calculate the memory storage costs. Need Grid 8 bytes, PSF 8 bytes, Weights 8 bytes, Model 8 bytes, 
+# NormalEquations 3 * 8 bytes  Here we assume that for the Continuum pipelines, each channel is split 
+# to a different processor.
+#
+if message['Pipeline_Type']=='Spectral_Line':
+	Memory_Unit_Scalar = 7 * 8 * message['Number_Spectral_Channels'] * Number_Pixels * Number_Pixels / 1024 / 1024 / 1024 
+else:
+	Memory_Unit_Scalar = 7 * 8 * message['Number_Taylor_Terms'] * Number_Pixels * Number_Pixels / 1024 / 1024 / 1024 
+
+print blockname,"Vis_Engine memory required     = ", message['quantity']*Memory_Unit_Scalar / 1024, "TB"
+SendMessage('memory', message['quantity']*Memory_Unit_Scalar, message['purchase_year'])
+
+#
+# Storage for Image, PSF, Weights
+#
+if message['Pipeline_Type']=='Spectral_Line':
+	Disk_Space = 3 * 4 * message['Number_Spectral_Channels'] * Number_Pixels * Number_Pixels / 1024 / 1024 / 1024 / 1024 / 1024 
+elif (message['Pipeline_Type']=='Ingest') or (message['Pipeline_Type']=='Calibration'):
+	Disk_Space = 0.0
+elif message['Pipeline_Type']=='Transient':
+	print blockname,"Transient mode - making %d images" % (message['Number_Images'])
+	Disk_Space = 3 * 4 * message['Number_Images'] * message['Number_Taylor_Terms'] * Number_Pixels * Number_Pixels / 1024 / 1024 / 1024  / 1024 / 1024 
+else:
+	Disk_Space = 3 * 4 * message['Number_Taylor_Terms'] * Number_Pixels * Number_Pixels / 1024 / 1024 / 1024  / 1024 / 1024 
+
+print blockname,"Image disk storage required = ", Disk_Space*message['quantity']*1024, " TB"
+SendMessage('storage', message['quantity']*Disk_Space, message['purchase_year'])
+
+outputs['NumberOfUnits'] += message['quantity']
+
+</implementation>
+  <DetailedDescription>Cost model for SKA Pipeline Computing: this is based on the analysis of w snapshots
+  in Cornwell, Voronkov, and Humphreys, "Wide Field Imaging for the Square Kilometre Array.
+  http://arxiv.org/abs/1207.5861 This has been augmented by the addition of aproject terms since
+  these form a lower limit.
+  
+</DetailedDescription>
+  <ToolVersion>0.3</ToolVersion>
+  <children>
+    <child>
+      <ImplementationDB>Computing_Memory</ImplementationDB>
+      <LocalName>memory</LocalName>
+      <UnitQuantity>1.0</UnitQuantity>
+    </child>
+    <child>
+      <ImplementationDB>Computing_Processor</ImplementationDB>
+      <LocalName>processor</LocalName>
+      <UnitQuantity>1.0</UnitQuantity>
+    </child>
+    <child>
+      <ImplementationDB>Computing_Storage</ImplementationDB>
+      <LocalName>storage</LocalName>
+      <UnitQuantity>1.0</UnitQuantity>
+    </child>
+  </children>
+  <CalculatedSpecifications/>
+</DesignBlock>

@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- $Id: -->
+<DesignBlock>
+  <comment>Computing</comment>
+  <inputs>
+    <input>
+      <comment>Number of continuum major cycles</comment>
+      <name>Number_Continuum_Major_Cycles</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <StdDev></StdDev>
+        <min>5.0</min>
+        <max>20.0</max>
+        <PeakLikelihood>10.0</PeakLikelihood>
+        <str></str>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>integer</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Number of spectral line major cycles</comment>
+      <name>Number_Spectral_Major_Cycles</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <StdDev></StdDev>
+        <min>5.0</min>
+        <max>20.0</max>
+        <PeakLikelihood>10.0</PeakLikelihood>
+        <str></str>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>integer</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Number of Taylor terms in frequency expansion</comment>
+      <name>Number_Taylor_Terms</name>
+      <LowerLimit>1</LowerLimit>
+      <DefaultValue>
+        <StdDev></StdDev>
+        <min></min>
+        <max></max>
+        <PeakLikelihood>1.0</PeakLikelihood>
+        <str></str>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>integer</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Pipeline type e.g. Calibration, Continuum, Spectral_Line, Transient, All</comment>
+      <name>Pipeline_Type</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <StdDev></StdDev>
+        <min></min>
+        <max></max>
+        <PeakLikelihood></PeakLikelihood>
+        <str>Continuum</str>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>String</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues>
+        <value>
+          <value>Calibration</value>
+        </value>
+        <value>
+          <value>Continuum</value>
+        </value>
+        <value>
+          <value>Spectral_Line</value>
+        </value>
+        <value>
+          <value>Transient</value>
+        </value>
+        <value>
+          <value>All</value>
+        </value>
+        <value>
+          <value>Ingest</value>
+        </value>
+      </PermittedValues>
+      <type>string</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Processing must complete in this fraction of real time</comment>
+      <name>Duty_Cycle</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <StdDevPercent></StdDevPercent>
+        <min></min>
+        <max></max>
+        <PeakLikelihood>0.3</PeakLikelihood>
+        <str></str>
+        <StdDev></StdDev>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>float</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Number of scales for deconvolution</comment>
+      <name>Number_Scales</name>
+      <LowerLimit>1</LowerLimit>
+      <DefaultValue>
+        <str></str>
+        <min></min>
+        <max></max>
+        <StdDevPercent></StdDevPercent>
+        <PeakLikelihood>5</PeakLikelihood>
+        <StdDev></StdDev>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>integer</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+     <input>
+      <comment>Number of channels for continuum imaging</comment>
+      <name>Number_Continuum_Channels</name>
+      <LowerLimit>1</LowerLimit>
+      <DefaultValue>
+        <str></str>
+        <min></min>
+        <max></max>
+        <StdDevPercent></StdDevPercent>
+        <PeakLikelihood>1</PeakLikelihood>
+        <StdDev></StdDev>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>integer</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+     <input>
+      <comment>Number of channels for spectral imaging</comment>
+      <name>Number_Spectral_Channels</name>
+      <LowerLimit>1</LowerLimit>
+      <DefaultValue>
+        <str></str>
+        <min></min>
+        <max></max>
+        <StdDevPercent></StdDevPercent>
+        <PeakLikelihood>32768</PeakLikelihood>
+        <StdDev></StdDev>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>integer</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Number of pixels for each l,m axis</comment>
+      <name>Number_Pixels</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <StdDev></StdDev>
+        <min></min>
+        <max></max>
+        <PeakLikelihood>4096</PeakLikelihood>
+        <str></str>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>integer</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Number of iterations </comment>
+      <name>Number_Iterations</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <StdDevPercent></StdDevPercent>
+        <min>1.0</min>
+        <max></max>
+        <PeakLikelihood>10000.0</PeakLikelihood>
+        <str></str>
+        <StdDev></StdDev>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>integer</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Width of PSF patch used in deconvolution</comment>
+      <name>PSF_Width</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <StdDevPercent></StdDevPercent>
+        <min></min>
+        <max></max>
+        <PeakLikelihood>512.0</PeakLikelihood>
+        <str></str>
+        <StdDev></StdDev>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>integer</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+  </inputs>
+  <name>Baseline_Computing_Deconvolve_Engine</name>
+  <reference>computing.xhtml</reference>
+  <author>Tim Cornwell</author>
+  <specifications/>
+  <outputs/>
+  <implementation>
+from math import pow
+from math import pi
+from math import sqrt
+from math import log
+
+blockname='Deconvolve_Engine'
+
+######################################################################################################
+#
+# Get relevant parameters from processor
+#
+Cleaning_Time=ListOfChildren['processor']['specifications']['Cleaning_Time']
+if message['PSF_Width'] &lt; 2:
+                         PSF_Width=message['Number_Pixels']
+else:
+                         PSF_Width=message['PSF_Width']
+
+doProcessing=False
+if message['Pipeline_Type']=='Spectral_Line':
+	Processing_Fraction = message['Number_Spectral_Major_Cycles'] * message['Number_Spectral_Channels'] * message['Number_Scales'] \
+	* message['Number_Iterations']*pow(PSF_Width,2)* Cleaning_Time / message['Duty_Cycle']
+	Processing_Fraction.SetUnit('')
+	if message['Number_Spectral_Major_Cycles'] > 0 and message['Number_Spectral_Channels'] > 0 and message['Number_Scales'] > 0 and message['Number_Iterations'] > 0:
+		print blockname,"Deconvolve_Engine processing required =", Processing_Fraction*message['quantity']
+		SendMessage('processor', message['quantity']*Processing_Fraction, message['purchase_year'])
+		doProcessing=True
+elif message['Pipeline_Type']=='Continuum':
+	Processing_Fraction = message['Number_Continuum_Major_Cycles'] * message['Number_Taylor_Terms'] * message['Number_Scales'] \
+	* message['Number_Iterations']*pow(PSF_Width,2)* Cleaning_Time / message['Duty_Cycle']
+	Processing_Fraction.SetUnit('')
+	if message['Number_Continuum_Major_Cycles'] > 0 and message['Number_Taylor_Terms'] > 0 and message['Number_Scales'] > 0 and message['Number_Iterations'] > 0:
+		print blockname,"Deconvolve_Engine processing required =", Processing_Fraction*message['quantity']
+		SendMessage('processor', message['quantity']*Processing_Fraction, message['purchase_year'])
+		doProcessing=True
+	
+######################################################################################################
+#
+# Calculate the memory storage costs. We assume that we can reuse memory over major cycles 
+#
+if doProcessing:
+	if message['Pipeline_Type']=='Spectral_Line':
+		Memory_Unit_Scalar = 2 * 4 * message['Number_Spectral_Channels'] * message['Number_Scales'] * message['Number_Pixels'] * message['Number_Pixels']  / 1024 / 1024 / 1024 
+		SendMessage('memory', message['quantity']*Memory_Unit_Scalar, message['purchase_year'])
+		print blockname,"Deconvolve_Engine memory required     = ", message['quantity'] * Memory_Unit_Scalar/1024 , "TB"
+	elif message['Pipeline_Type']=='Continuum':
+		Memory_Unit_Scalar = 2 * 4 * message['Number_Taylor_Terms'] * message['Number_Scales'] * message['Number_Pixels'] * message['Number_Pixels'] / 1024 / 1024 / 1024 
+		SendMessage('memory', message['quantity']*Memory_Unit_Scalar, message['purchase_year'])
+		print blockname,"Deconvolve_Engine memory required     = ", message['quantity'] * Memory_Unit_Scalar/1024 , "TB"
+
+	outputs['NumberOfUnits'] += message['quantity']
+
+</implementation>
+  <DetailedDescription>Cost model for SKA Pipeline Computing
+  
+  The rate parameters come from running tConvolve on a 2012 era processor. The costs and power
+  come from a substantial multi-node installation designed for running a similar job load to
+  that needed for SKA. The storage space is for a fast 5 GB/s Lustre filesystem.
+  
+  The cost calculated are for the pipeline processor and the short-term storage space required.
+
+</DetailedDescription>
+  <ToolVersion>0.3</ToolVersion>
+  <children>
+    <child>
+      <ImplementationDB>Computing_Memory</ImplementationDB>
+      <LocalName>memory</LocalName>
+      <UnitQuantity>1.0</UnitQuantity>
+    </child>
+    <child>
+      <ImplementationDB>Computing_Processor</ImplementationDB>
+      <LocalName>processor</LocalName>
+      <UnitQuantity>1.0</UnitQuantity>
+    </child>
+  </children>
+  <CalculatedSpecifications/>
+</DesignBlock>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- $Id: -->
+<TelescopeDesign>
+  <comment>AA low definition</comment>
+  <DefaultTopLevel>Baseline_AA_Low</DefaultTopLevel>
+  <name>SKA1_AA_Low</name>
+  <author>Tim Cornwell</author>
+  <DesignBlockMapping>
+    <block>
+      <ImplementationDB>Baseline_Computing_Storage</ImplementationDB>
+      <InternalName>Computing_Storage</InternalName>
+    </block>
+    <block>
+      <ImplementationDB>Baseline_Computing_Processor</ImplementationDB>
+      <InternalName>Computing_Processor</InternalName>
+    </block>
+    <block>
+      <ImplementationDB>Baseline_Computing_Vis_Engine</ImplementationDB>
+      <InternalName>Computing_Vis_Engine</InternalName>
+    </block>
+    <block>
+      <ImplementationDB>Baseline_Computing_Deconvolve_Engine</ImplementationDB>
+      <InternalName>Computing_Deconvolve_Engine</InternalName>
+    </block>
+    <block>
+      <ImplementationDB>Baseline_Computing_Pipeline</ImplementationDB>
+      <InternalName>Computing_Pipeline</InternalName>
+    </block>
+    <block>
+      <ImplementationDB>Baseline_Computing_Memory</ImplementationDB>
+      <InternalName>Computing_Memory</InternalName>
+    </block>
+    <block>
+      <ImplementationDB>Baseline_AA_Low</ImplementationDB>
+      <InternalName>Baseline_AA_Low</InternalName>
+    </block>
+  </DesignBlockMapping>
+  <DetailedDescription>Enter comment here</DetailedDescription>
+  <GlobalInputs/>
+</TelescopeDesign>

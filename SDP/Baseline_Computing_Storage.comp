@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- $Id: -->
+<component>
+  <comment>Data storage, parametric equation</comment>
+  <DevelopmentCost>
+    <currency>AUD</currency>
+    <distribution>
+      <DistributionType>FixedValue</DistributionType>
+      <min>0.0</min>
+      <max>0.0</max>
+      <StdDevPercent></StdDevPercent>
+      <PeakLikelihood>0.0</PeakLikelihood>
+      <StdDev>0.0</StdDev>
+    </distribution>
+    <CostProjection>INFLATION</CostProjection>
+    <year>2008</year>
+  </DevelopmentCost>
+  <trl>-1.0</trl>
+  <reference>computing.xhtml</reference>
+  <author>Imported from SKAcost</author>
+  <specifications/>
+  <ToolVersion>0.3</ToolVersion>
+  <MeanYearsToFailure>1000.0</MeanYearsToFailure>
+  <BasisOfEstimate>-1</BasisOfEstimate>
+  <PowerConsumption>
+    <distribution>
+      <DistributionType>FixedValue</DistributionType>
+      <min>0.0</min>
+      <max>0.0</max>
+      <StdDevPercent></StdDevPercent>
+      <PeakLikelihood>0.0</PeakLikelihood>
+      <StdDev>0.0</StdDev>
+    </distribution>
+    <unit>W</unit>
+  </PowerConsumption>
+  <DetailedDescription></DetailedDescription>
+  <SparingFraction>0.05</SparingFraction>
+  <MaintenanceCost>
+    <currency>EUR</currency>
+    <distribution>
+      <StdDev>0.0</StdDev>
+      <min>0.0</min>
+      <max>0.0</max>
+      <StdDevPercent>0.0</StdDevPercent>
+      <PeakLikelihood>0.0</PeakLikelihood>
+      <DistributionType>FixedValue</DistributionType>
+    </distribution>
+    <unit></unit>
+    <CostProjection>INFLATION</CostProjection>
+    <year>2007</year>
+  </MaintenanceCost>
+  <IntegerUnit>False</IntegerUnit>
+  <UnitCost>
+    <currency>AUD</currency>
+    <distribution>
+      <DistributionType>TriangleDist</DistributionType>
+      <min>400000.0</min>
+      <max>1200000.0</max>
+      <StdDevPercent></StdDevPercent>
+      <PeakLikelihood>800000.0</PeakLikelihood>
+      <StdDev>0.0</StdDev>
+    </distribution>
+    <CostProjection>MOORE</CostProjection>
+    <unit></unit>
+    <year>2012</year>
+  </UnitCost>
+  <name>Baseline_Computing_Storage</name>
+</component>

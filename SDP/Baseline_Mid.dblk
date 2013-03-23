@@ -1,0 +1,596 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- $Id: -->
+<DesignBlock>
+  <comment>Enter Comment Here</comment>
+  <inputs>
+    <input>
+      <comment>Number of scales for deconvolution</comment>
+      <name>Number_Scales</name>
+      <LowerLimit>1</LowerLimit>
+      <DefaultValue>
+        <str></str>
+        <min></min>
+        <max></max>
+        <StdDevPercent></StdDevPercent>
+        <PeakLikelihood>5</PeakLikelihood>
+        <StdDev></StdDev>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>integer</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Number of Taylor terms in frequency expansion</comment>
+      <name>Number_Taylor_Terms</name>
+      <LowerLimit>1</LowerLimit>
+      <DefaultValue>
+        <str></str>
+        <StdDev></StdDev>
+        <max></max>
+        <min></min>
+        <PeakLikelihood>1.0</PeakLikelihood>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>integer</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Pipeline type e.g. Calibration, Continuum, Spectral_Line, Transient, All</comment>
+      <name>Pipeline_Type</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <str>All</str>
+        <StdDev></StdDev>
+        <max></max>
+        <min></min>
+        <PeakLikelihood></PeakLikelihood>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>String</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues>
+        <value>
+          <value>Calibration</value>
+        </value>
+        <value>
+          <value>Continuum</value>
+        </value>
+        <value>
+          <value>Spectral_Line</value>
+        </value>
+        <value>
+          <value>Transient</value>
+        </value>
+        <value>
+          <value>Ingest</value>
+        </value>
+        <value>
+          <value>All</value>
+        </value>
+      </PermittedValues>
+      <type>string</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Number of images</comment>
+      <name>Number_Images</name>
+      <LowerLimit>1</LowerLimit>
+      <DefaultValue>
+        <str></str>
+        <StdDev></StdDev>
+        <max></max>
+        <min></min>
+        <PeakLikelihood>1.0</PeakLikelihood>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>integer</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Mueller matrix application: Full, Diagonal</comment>
+      <name>Mueller_Multiply</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <str>Full</str>
+        <StdDev></StdDev>
+        <max></max>
+        <min></min>
+        <PeakLikelihood></PeakLikelihood>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>String</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues>
+        <value>
+          <value>Full</value>
+        </value>
+        <value>
+          <value>Diagonal</value>
+        </value>
+      </PermittedValues>
+      <type>string</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>RMS fractional W</comment>
+      <name>RMS_W</name>
+      <LowerLimit>0.0</LowerLimit>
+      <DefaultValue>
+        <StdDev></StdDev>
+        <min></min>
+        <max></max>
+        <PeakLikelihood>0.3</PeakLikelihood>
+        <str></str>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>float</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Bandwidth for observation</comment>
+      <name>Bandwidth</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <str></str>
+        <StdDev></StdDev>
+        <max></max>
+        <min></min>
+        <PeakLikelihood>700000000.0</PeakLikelihood>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit>Hz</unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>float</type>
+      <unit>Hz</unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Integration time for observation</comment>
+      <name>Integration_Time</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <str></str>
+        <StdDev></StdDev>
+        <max></max>
+        <min></min>
+        <PeakLikelihood>-1.0</PeakLikelihood>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit>s</unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>float</type>
+      <unit>s</unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Number of antennas</comment>
+      <name>Number_Antennas</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <str></str>
+        <StdDev></StdDev>
+        <max></max>
+        <min></min>
+        <PeakLikelihood>250.0</PeakLikelihood>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>integer</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Maximum baseline length</comment>
+      <name>Maximum_Baseline</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <str></str>
+        <StdDev></StdDev>
+        <max></max>
+        <min></min>
+        <PeakLikelihood>100000.0</PeakLikelihood>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit>m</unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>float</type>
+      <unit>m</unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Data retention period</comment>
+      <name>Data_Retention_Period</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <str></str>
+        <StdDev></StdDev>
+        <max></max>
+        <min></min>
+        <PeakLikelihood>24.0</PeakLikelihood>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit>hr</unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>float</type>
+      <unit>hr</unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Frequency for imaging</comment>
+      <name>Frequency</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <str></str>
+        <StdDev></StdDev>
+        <max></max>
+        <min></min>
+        <PeakLikelihood>700000000.0</PeakLikelihood>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit>Hz</unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>float</type>
+      <unit>Hz</unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Effective diameter of station or antenna</comment>
+      <name>Effective_Diameter</name>
+      <LowerLimit>0.1</LowerLimit>
+      <DefaultValue>
+        <str></str>
+        <StdDev></StdDev>
+        <max></max>
+        <min></min>
+        <PeakLikelihood>15.0</PeakLikelihood>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit>m</unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>float</type>
+      <unit>m</unit>
+      <UpperLimit>1000</UpperLimit>
+    </input>
+    <input>
+      <comment>Maximum allowed smearing due to time or frequency averaging</comment>
+      <name>Maximum_Smearing</name>
+      <LowerLimit>0.0001</LowerLimit>
+      <DefaultValue>
+        <StdDev></StdDev>
+        <min></min>
+        <max></max>
+        <PeakLikelihood>1.0</PeakLikelihood>
+        <str></str>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>float</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Number of channels for continuum imaging</comment>
+      <name>Number_Continuum_Channels</name>
+      <LowerLimit>1</LowerLimit>
+      <DefaultValue>
+        <StdDevPercent></StdDevPercent>
+        <min></min>
+        <max></max>
+        <PeakLikelihood>1.0</PeakLikelihood>
+        <str></str>
+        <StdDev></StdDev>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>integer</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Number of channels for spectral imaging</comment>
+      <name>Number_Spectral_Channels</name>
+      <LowerLimit>1</LowerLimit>
+      <DefaultValue>
+        <StdDevPercent></StdDevPercent>
+        <min></min>
+        <max></max>
+        <PeakLikelihood>32768.0</PeakLikelihood>
+        <str></str>
+        <StdDev></StdDev>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>integer</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Guard band for the field of view</comment>
+      <name>Guard_Band</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <StdDev></StdDev>
+        <min></min>
+        <max></max>
+        <PeakLikelihood>4.0</PeakLikelihood>
+        <str></str>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>float</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Oversampling of beam wrt to lambda/B</comment>
+      <name>Oversampling</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <str></str>
+        <min></min>
+        <max></max>
+        <StdDevPercent></StdDevPercent>
+        <PeakLikelihood>3.0</PeakLikelihood>
+        <StdDev></StdDev>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>float</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Processing must complete in this fraction of real time</comment>
+      <name>Duty_Cycle</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <StdDevPercent></StdDevPercent>
+        <min></min>
+        <max></max>
+        <PeakLikelihood>0.3</PeakLikelihood>
+        <str></str>
+        <StdDev></StdDev>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>float</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Observing time </comment>
+      <name>Observing_Time</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <StdDev></StdDev>
+        <min></min>
+        <max></max>
+        <PeakLikelihood>43200.0</PeakLikelihood>
+        <str></str>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit>s</unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>float</type>
+      <unit>s</unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Are the As antenna dependent</comment>
+      <name>Antenna_A</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <StdDevPercent></StdDevPercent>
+        <min></min>
+        <max></max>
+        <PeakLikelihood>0.0</PeakLikelihood>
+        <str></str>
+        <StdDev></StdDev>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>integer</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Time interval for recalculating A</comment>
+      <name>A_Time</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <str></str>
+        <StdDev></StdDev>
+        <max></max>
+        <min></min>
+        <PeakLikelihood>0.0</PeakLikelihood>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit>s</unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>float</type>
+      <unit>s</unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Constraint on total collecting area</comment>
+      <name>Total_Area</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <StdDevPercent></StdDevPercent>
+        <min></min>
+        <max></max>
+        <PeakLikelihood>-1.0</PeakLikelihood>
+        <str></str>
+        <StdDev></StdDev>
+        <DistributionType>FixedValue</DistributionType>
+        <unit>m^2</unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>float</type>
+      <unit>m^2</unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Number of continuum major cycles</comment>
+      <name>Number_Continuum_Major_Cycles</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <str></str>
+        <StdDev></StdDev>
+        <max></max>
+        <min></min>
+        <PeakLikelihood>1.0</PeakLikelihood>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>integer</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
+      <comment>Number of spectral line major cycles</comment>
+      <name>Number_Spectral_Major_Cycles</name>
+      <LowerLimit></LowerLimit>
+      <DefaultValue>
+        <str></str>
+        <StdDev></StdDev>
+        <max></max>
+        <min></min>
+        <PeakLikelihood>0.0</PeakLikelihood>
+        <StdDevPercent></StdDevPercent>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>integer</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+  </inputs>
+  <name>Baseline_Mid</name>
+  <reference>Enter Reference Here</reference>
+  <author>Enter name here</author>
+  <specifications/>
+  <ToolVersion>0.5</ToolVersion>
+  <implementation>
+results=CalculatedSpecifications['Diameter_Antennas_Total'](message)
+message['Effective_Diameter']=results['Effective_Diameter']
+message['Number_Antennas']=results['Number_Antennas']
+
+print message.keys()
+
+# These parameters define the telescope 
+TrickleParameter('Dish_Diameter', message['Effective_Diameter'])
+for key in message.keys():
+	TrickleParameter(key, message[key])
+
+SendMessage('computing', message['quantity'], message['purchase_year'])
+
+
+
+
+
+</implementation>
+  <DetailedDescription>Enter Full Description Here
+
+
+
+
+
+
+</DetailedDescription>
+  <outputs/>
+  <children>
+    <child>
+      <ImplementationDB>Computing_Pipeline</ImplementationDB>
+      <LocalName>computing</LocalName>
+      <UnitQuantity>1.0</UnitQuantity>
+    </child>
+  </children>
+  <CalculatedSpecifications>
+    <specification>
+      <implementation>
+from math import sqrt
+from math import pi
+
+Effective_Diameter=message['Effective_Diameter']
+Number_Antennas=message['Number_Antennas']
+Total_Area=message['Total_Area']
+
+print 'Initially Effective_Diameter = ', message['Effective_Diameter']
+print 'Initially Number_Antennas    = ', message['Number_Antennas']
+print 'Initially Total_Area         = ', message['Total_Area']
+
+nspecified=0
+#Check that default inputs aren't used
+for key in ['Effective_Diameter', 'Number_Antennas']:
+ if message[key]&gt;0 :nspecified=nspecified+1
+
+#if nspecified&lt;2 :
+# raise DesignError, ' too few antenna property values specified '+ message['_sender']
+outputs['Effective_Diameter']=message['Effective_Diameter']
+outputs['Number_Antennas']=message['Number_Antennas']
+
+if Total_Area &gt; 0:
+ if Number_Antennas &lt; 0:
+  outputs['Number_Antennas']=int(round(Total_Area/(pi*pow(Effective_Diameter/2,2))))
+  outputs['Calculation_Type']='Number_Antennas'
+  outputs['Effective_Diameter']=message['Effective_Diameter']
+  print 'Calculated Number_Antennas = ', outputs['Number_Antennas']
+ elif Effective_Diameter &lt; 0:
+  outputs['Effective_Diameter']=2.0*sqrt(Total_Area/(pi*Number_Antennas))
+  outputs['Calculation_Type']='Effective_Diameter'
+  outputs['Number_Antennas']=message['Number_Antennas']
+  print 'Calculated Effective_Diameter = ', outputs['Effective_Diameter']
+else:
+ print 'Total_Area constraint less than zero - ignoring'
+ 
+if outputs['Number_Antennas'] &lt; 1: 
+ raise DesignError, 'Number_antennas less than one '+ message['_sender']
+if outputs['Effective_Diameter'] &lt; 0.0: 
+ raise DesignError, 'Effective_Diameter less than zero '+ message['_sender']
+
+</implementation>
+      <name>Diameter_Antennas_Total</name>
+      <description>Given either diameter or number antennas, and fixed total diameter, pick the other</description>
+    </specification>
+  </CalculatedSpecifications>
+</DesignBlock>
