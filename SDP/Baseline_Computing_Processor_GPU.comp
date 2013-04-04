@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- $Id: -->
+<component>
+  <comment>Computer processsing, parametric equation</comment>
+  <DevelopmentCost>
+    <currency>AUD</currency>
+    <distribution>
+      <StdDevPercent></StdDevPercent>
+      <StdDev>0.0</StdDev>
+      <max>0.0</max>
+      <min>0.0</min>
+      <PeakLikelihood>0.0</PeakLikelihood>
+      <DistributionType>FixedValue</DistributionType>
+    </distribution>
+    <CostProjection>MOORE</CostProjection>
+    <year>2012</year>
+  </DevelopmentCost>
+  <trl>-1.0</trl>
+  <reference>computing.xhtml</reference>
+  <author>Tim Cornwell</author>
+  <specifications>
+    <specification>
+      <DataType>float</DataType>
+      <value>0.8e-13</value>
+      <name>Gridding_Time</name>
+      <unit>s</unit>
+      <description>Time in which a visibility can be gridded to a single pixel</description>
+    </specification>
+    <specification>
+      <DataType>float</DataType>
+      <unit>s</unit>
+      <name>FFT_Time</name>
+      <value>1.1e-12</value>
+      <description>Time to perform a single FFT</description>
+    </specification>
+    <specification>
+      <DataType>float</DataType>
+      <unit>s</unit>
+      <name>Image_Reprojection_Time</name>
+      <value>9e-11</value>
+      <description>Time to reproject a single pixel</description>
+    </specification>
+    <specification>
+      <DataType>float</DataType>
+      <value>2e-13</value>
+      <name>Cleaning_Time</name>
+      <unit>s</unit>
+      <description>Rate at which pixels can be cleaned</description>
+    </specification>
+  </specifications>
+  <ToolVersion>0.3</ToolVersion>
+  <MeanYearsToFailure>1000.0</MeanYearsToFailure>
+  <name>Baseline_Computing_Processor_GPU</name>
+  <BasisOfEstimate>-1</BasisOfEstimate>
+  <PowerConsumption>
+    <distribution>
+      <StdDevPercent></StdDevPercent>
+      <StdDev>0.0</StdDev>
+      <max>0.0</max>
+      <min>0.0</min>
+      <PeakLikelihood>1860000000.0</PeakLikelihood>
+      <DistributionType>FixedValue</DistributionType>
+    </distribution>
+    <unit>W</unit>
+  </PowerConsumption>
+  <DetailedDescription></DetailedDescription>
+  <MaintenanceCost>
+    <currency>EUR</currency>
+    <distribution>
+      <StdDevPercent>0.0</StdDevPercent>
+      <StdDev>0.0</StdDev>
+      <max>0.0</max>
+      <min>0.0</min>
+      <PeakLikelihood>0.0</PeakLikelihood>
+      <DistributionType>FixedValue</DistributionType>
+    </distribution>
+    <CostProjection>INFLATION</CostProjection>
+    <unit></unit>
+    <year>2007</year>
+  </MaintenanceCost>
+  <IntegerUnit>False</IntegerUnit>
+  <UnitCost>
+    <currency>AUD</currency>
+    <distribution>
+      <StdDevPercent></StdDevPercent>
+      <StdDev></StdDev>
+      <max>1050000</max>
+      <min>3150000</min>
+      <PeakLikelihood>2100000.0</PeakLikelihood>
+      <DistributionType>TriangleDist</DistributionType>
+    </distribution>
+    <unit></unit>
+    <CostProjection>MOORE</CostProjection>
+    <year>2013</year>
+  </UnitCost>
+  <SparingFraction>0.05</SparingFraction>
+</component>

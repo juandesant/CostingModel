@@ -4,6 +4,25 @@
   <comment>Enter Comment Here</comment>
   <inputs>
     <input>
+      <comment>Number of scales for deconvolution</comment>
+      <name>Number_Scales</name>
+      <LowerLimit>1</LowerLimit>
+      <DefaultValue>
+        <str></str>
+        <min></min>
+        <max></max>
+        <StdDevPercent></StdDevPercent>
+        <PeakLikelihood>5</PeakLikelihood>
+        <StdDev></StdDev>
+        <DistributionType>FixedValue</DistributionType>
+        <unit></unit>
+      </DefaultValue>
+      <PermittedValues/>
+      <type>integer</type>
+      <unit></unit>
+      <UpperLimit></UpperLimit>
+    </input>
+    <input>
       <comment>Number of Taylor terms in frequency expansion</comment>
       <name>Number_Taylor_Terms</name>
       <LowerLimit>1</LowerLimit>

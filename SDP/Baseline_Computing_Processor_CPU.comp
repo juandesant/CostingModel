@@ -50,7 +50,7 @@
   </specifications>
   <ToolVersion>0.3</ToolVersion>
   <MeanYearsToFailure>1000.0</MeanYearsToFailure>
-  <name>Baseline_Computing_Processor</name>
+  <name>Baseline_Computing_Processor_CPU</name>
   <BasisOfEstimate>-1</BasisOfEstimate>
   <PowerConsumption>
     <distribution>
