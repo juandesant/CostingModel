@@ -35,7 +35,7 @@
     <unit>W</unit>
   </PowerConsumption>
   <DetailedDescription>
-  Memory model for SKA computing - $65 AUD / 50 EUR per 1GB
+  Memory model for SKA computing - $10 AUD 
   
 </DetailedDescription>
   <MaintenanceCost>
@@ -60,7 +60,7 @@
       <min></min>
       <max></max>
       <StdDevPercent></StdDevPercent>
-      <PeakLikelihood>65.0</PeakLikelihood>
+      <PeakLikelihood>10.0</PeakLikelihood>
       <DistributionType>FixedValue</DistributionType>
     </distribution>
     <CostProjection>Computing_Memory_Scaling</CostProjection>

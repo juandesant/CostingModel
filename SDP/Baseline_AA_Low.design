@@ -11,7 +11,7 @@
       <InternalName>Computing_Storage</InternalName>
     </block>
     <block>
-      <ImplementationDB>Baseline_Computing_Processor</ImplementationDB>
+      <ImplementationDB>Baseline_Computing_Processor_GPU</ImplementationDB>
       <InternalName>Computing_Processor</InternalName>
     </block>
     <block>

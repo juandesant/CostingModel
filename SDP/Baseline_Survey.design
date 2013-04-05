@@ -15,54 +15,6 @@
       <InternalName>Computing_Storage</InternalName>
     </block>
     <block>
-      <ImplementationDB>SSET_Dish_Small_Parabola_Parametric</ImplementationDB>
-      <InternalName>Dish_Small_Parabola_Parametric</InternalName>
-    </block>
-    <block>
-      <ImplementationDB>SSET_Dish_Small_Parabola_Parametric_ScalingFactor</ImplementationDB>
-      <InternalName>Dish_Small_Parabola_Parametric_ScalingFactor</InternalName>
-    </block>
-    <block>
-      <ImplementationDB>SSET_Correlator_xNTD</ImplementationDB>
-      <InternalName>Correlator_xNTD</InternalName>
-    </block>
-    <block>
-      <ImplementationDB>SSET_Correlator_xNTD_MACs_FPGA</ImplementationDB>
-      <InternalName>Correlator_xNTD_MACs_FPGA</InternalName>
-    </block>
-    <block>
-      <ImplementationDB>SSET_Correlator_xNTD_Router_Cable</ImplementationDB>
-      <InternalName>Correlator_xNTD_Router_Cable</InternalName>
-    </block>
-    <block>
-      <ImplementationDB>SSET_Correlator_xNTD_Router_Electronics</ImplementationDB>
-      <InternalName>Correlator_xNTD_Router_Electronics</InternalName>
-    </block>
-    <block>
-      <ImplementationDB>SSET_Correlator_xNTD_Router_Hardware_Inflation</ImplementationDB>
-      <InternalName>Correlator_xNTD_Router_Hardware_Inflation</InternalName>
-    </block>
-    <block>
-      <ImplementationDB>SSET_Correlator_xNTD_Router_Hardware_Moore</ImplementationDB>
-      <InternalName>Correlator_xNTD_Router_Hardware_Moore</InternalName>
-    </block>
-    <block>
-      <ImplementationDB>SSET_DishPAF_Beamformer</ImplementationDB>
-      <InternalName>DishPAF_Beamformer</InternalName>
-    </block>
-    <block>
-      <ImplementationDB>SSET_Dish_Beamformer_Router_Cable_Infineon</ImplementationDB>
-      <InternalName>Dish_Beamformer_Router_Cable_Infineon</InternalName>
-    </block>
-    <block>
-      <ImplementationDB>SSET_Dish_Beamformer_Digital</ImplementationDB>
-      <InternalName>Dish_Beamformer_Digital</InternalName>
-    </block>
-    <block>
-      <ImplementationDB>SSET_FPGA_Virtex35</ImplementationDB>
-      <InternalName>FPGA_Virtex35</InternalName>
-    </block>
-    <block>
       <ImplementationDB>Baseline_Computing_Memory</ImplementationDB>
       <InternalName>Computing_Memory</InternalName>
     </block>
@@ -75,7 +27,7 @@
       <InternalName>Computing_Vis_Engine</InternalName>
     </block>
     <block>
-      <ImplementationDB>Baseline_Computing_Processor</ImplementationDB>
+      <ImplementationDB>Baseline_Computing_Processor_GPU</ImplementationDB>
       <InternalName>Computing_Processor</InternalName>
     </block>
     <block>
